@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(238, 237, 208);
+   font-size: x-large
+}
+
+.main{
+text-align: center;
+font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: larger;
+ 
+}
+
+body{
+    border-style: groove;
+    border-width: 5rem;
+    border-color: rgba(111, 242, 198, 0.514)
+}
+a{
+    color: rgba(111, 242, 198, 0.953)
+}
+ul{
+    text-align: center;
+}
+
+img{
+border-style: solid;
+border-color: rgba(111, 242, 198, 0.953);
+border-width: 1rem;
+}
+h1{
+    color: rgba(22, 45, 37, 0.953);
+  text-indent: 1rem;
+}
