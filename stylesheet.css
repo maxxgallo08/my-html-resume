@@ -1,35 +1,74 @@
-body{
+body {
     background-color: rgb(238, 237, 208);
-   font-size: x-large
-}
-
-.main{
-text-align: center;
-font-family: "New Amsterdam", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: larger;
- 
-}
-
-body{
+    font-size: 1rem; /* Use relative units instead of x-large */
     border-style: groove;
     border-width: 5rem;
-    border-color: rgba(111, 242, 198, 0.514)
-}
-a{
-    color: rgba(111, 242, 198, 0.953)
-}
-ul{
-    text-align: center;
+    border-color: rgba(111, 242, 198, 0.514);
+    margin: 0;
+    padding: 0;
 }
 
-img{
-border-style: solid;
-border-color: rgba(111, 242, 198, 0.953);
-border-width: 1rem;
+.main {
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem; /* Use relative units */
 }
-h1{
+
+a {
+    color: rgba(111, 242, 198, 0.953);
+}
+
+ul {
+    text-align: center;
+    padding-left: 0; /* Remove default list indentation */
+}
+
+img {
+    border-style: solid;
+    border-color: rgba(111, 242, 198, 0.953);
+    border-width: 1rem;
+    max-width: 100%; /* Ensure image scales correctly */
+    height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
     color: rgba(22, 45, 37, 0.953);
-  text-indent: 1rem;
+    text-indent: 1rem;
+}
+
+/* Mobile-specific adjustments using media queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font size on mobile */
+        border-width: 1rem; /* Reduce border size for mobile */
+    }
+
+    .main {
+        font-size: 16px; /* Adjust font size in the main section */
+        padding: 1rem; /* Add padding for mobile */
+    }
+
+    img {
+        max-width: 100%; /* Ensure image scales correctly */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust header size for mobile */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Adjust subheading size for mobile */
+    }
+
+    ul {
+        padding-left: 0; /* Adjust list styling */
+    }
+
+    footer {
+        text-align: center; /* Ensure footer is centered */
+        font-size: 0.8rem; /* Smaller text for footer */
+    }
 }
