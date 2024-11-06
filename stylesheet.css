@@ -53,6 +53,10 @@ h1 {
     img {
         max-width: 100%; /* Ensure image scales correctly */
         height: auto; /* Maintain aspect ratio */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      
     }
 
     h1 {
