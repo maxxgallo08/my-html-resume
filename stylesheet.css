@@ -1,35 +1,48 @@
 body {
+    position: relative; /* Set a reference for absolute positioning */
     background-color: rgb(219, 219, 219);
-    font-size: 1rem; /* Use relative units instead of x-large */
+    font-size: 1rem;
     border-style: solid;
     border-width: 5rem;
-    border-color: rgb(34, 151, 153);
+    border-color: rgba(34, 151, 153, 0.625);
     margin: 0;
     padding: 0;
 }
 
+#photo2 {
+    width: 150px; /* Adjust width as desired */
+    height: 200px; /* Adjust height as desired */
+    position: relative; /* Position it relative to its parent container */
+    margin-right: 20px; /* Space between the image and the heading */
+    border: 5px solid white; /* Optional: add a white border for style */
+    border-radius: 50%; /* Optional: make it circular, like profile pics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+    transition: transform 0.3s ease;
+    display: inline-block; /* Make the image and text sit side by side */
+    vertical-align: middle; /* Align the image vertically in the middle of the h1 */
+}
 .main {
-    
     text-align: center;
-    font-family: "New Amsterdam", sans-serif;
+    font-family: "New Amsterdam", Arial, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.25rem; /* Use relative units */
-    padding: 9rem
+    font-size: 1.25rem;
+    padding: 9rem;
+    display: inline-block; /* This keeps the content inline and makes the layout side-by-side */
 }
 
-#name{
-    color: black;
+#name {
+      color: black;
     font-size: 5rem;
-    
-}
-#name:hover{
-text-decoration: underline;
-
+    display: inline-block; /* Make sure the name is inline with the image */
 }
 
-p{
-    color: rgb(66, 66, 66);
+#name:hover {
+    transform: scale(1.1);
+}
+
+p {
+    color: rgb(53, 53, 53);
 }
 
 ul {
@@ -37,37 +50,41 @@ ul {
     padding-left: 0; /* Remove default list indentation */
 }
 
-img {
+#photo1 {
     border-style: solid;
     border-color: rgb(34, 151, 153);
     border-width: 1rem;
     max-width: 100%; /* Ensure image scales correctly */
     height: auto; /* Maintain aspect ratio */
+    z-index: -10;
+    position: fixed;
+    opacity: 20%;
+    top: -10px;
+    right: 35%;
 }
 
-img:hover{
+#photo2:hover {
     transform: scale(1.1);
 }
 
-
-.labels{
-   color: black
-
+.labels {
+    color: black;
 }
-.labels2, .labels3{
+
+.labels2, .labels3 {
     color: rgb(34, 151, 153);
 }
 
-li{
+li {
     color: rgb(66, 66, 66);
 }
 
-a{
+a {
     color: rgba(36, 117, 121, 0.953);
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: rgb(109, 195, 195);
     font-size: x-large;
 }
@@ -77,10 +94,9 @@ ul ul>li {
     padding-left: 0; /* Removes default left padding */
     margin-left: 0; /* Adjusts any margin if needed */
     text-decoration: underline;
-
 }
 
-ul{
+ul {
     list-style-type: none; /* Removes the bullet points */
     padding-left: 0; /* Removes default left padding */
     margin: 0; /* Adjusts any margin if needed */
@@ -104,7 +120,6 @@ ul{
         display: block;
         margin-left: auto;
         margin-right: auto;
-      
     }
 
     h1 {
